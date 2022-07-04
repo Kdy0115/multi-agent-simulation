@@ -1,0 +1,12 @@
+version: "3"
+services:
+  python3:
+    build: ./segregation
+    container_name: "segregation"
+    working_dir: "/root/src"
+    ports:
+      - "8765:8765"
+    tty: true
+    volumes:
+      - ./segregation:/root/src
+    command: python main.py
