@@ -4,8 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-mesa = "*"
-matplotlib = "*"
+mesa = "==0.9.0"
+matplotlib = "==3.5.2"
+sphinx = "*"
 
 [dev-packages]
 
